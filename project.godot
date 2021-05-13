@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="GRSS"
+config/description="A RSS feed reader made in Godot
+(C) 2021, Raphipod"
+run/main_scene="res://GRSS.tscn"
+boot_splash/image="res://bootsplash.png"
+config/icon="res://icons/grss_icon.png"
+config/macos_native_icon="res://icons/grss_logo.icns"
+config/windows_native_icon="res://icons/grss_logo.ico"
+
+[logging]
+
+file_logging/enable_file_logging.pc=false
+
+[physics]
+
+common/enable_object_picking=false
+
+[rendering]
+
+quality/driver/fallback_to_gles2=true
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+environment/default_environment="res://default_env.tres"

@@ -131,3 +131,6 @@ func load_data():
 	
 	$SettingsDialog/RSSURLText.text = url
 	save_config.close()
+
+func _on_CheckButton_toggled(button_pressed):
+	OS.set_low_processor_usage_mode(true)
